@@ -3,6 +3,9 @@
 Influbbit is a Python service to pull data from the InfluxDB database used by Heapster (on a Kubernetes cluster)
 and send that information to a remote RabbitMQ server outside of Kubernetes
 
+## To Run
+curl -s https://raw.githubusercontent.com/peteper2001/nflbtemp/master/k8s/influbbit-launch.sh | bash -s
+
 ## Code Organization
 
 * The DEVELOP.md file is mostly a summary of notes used during the development. Can be used to create the development environment and install the required dependencies, learn how test the servers locally, how import an external InfluxDB database (from a production Kubernetes cluster) to make local tests, how create and upload the Docker image, etc.
