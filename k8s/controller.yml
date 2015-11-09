@@ -21,7 +21,7 @@ spec:
           path: /var/lib/influbbit
       containers:
       - name: influbbit
-        image: blancsys/influbbit:latest
+        image: peteper2001/nflbtemp:latest
         imagePullPolicy: Always
         volumeMounts:
         - name: influbbitdata
