@@ -59,8 +59,8 @@ echo "Uninstalling any previous version of Influbbit..."
 kubectl delete --ignore-not-found=true -f $INFLUBBIT_DIR/controller.yml
 
 # Launch secret to provide Docker hub credentials
-kubectl delete --ignore-not-found=true -f $INFLUBBIT_DIR/dockersecret.yml
-kubectl create -f $INFLUBBIT_DIR/dockersecret.yml
+# kubectl delete --ignore-not-found=true -f $INFLUBBIT_DIR/dockersecret.yml
+# kubectl create -f $INFLUBBIT_DIR/dockersecret.yml
 
 # Replace variables in controller.yml
 echo "Configuring Influbbit variables..."
