@@ -1,21 +1,4 @@
-# Influbbit Service
-
-Influbbit is a Python service to pull data from the InfluxDB database used by Heapster (on a Kubernetes cluster)
-and send that information to a remote RabbitMQ server outside of Kubernetes
-
-# ==============================================================================================================
-
-# Influbbit Production Installation
-
-## Prerrequisites:
-
-- Kubernetes cluster with Heapster addon installed (using InfluxDB as backend)
-
-TO-DO
-
-# ==============================================================================================================
-
-# Influbbit Development Installation
+# Influbbit Development
 
 ## Prerrequisites:
 
@@ -23,7 +6,7 @@ TO-DO
     curl -sSL https://get.docker.com/ | sh
     
 - RabbitMQ
-    Sample Docker based installation for test/debug:
+  - Sample Docker based installation for test/debug:
     - sudo mkdir /var/log/rabbitmq
     - sudo mkdir -p /var/lib/rabbitmq/mnesia
     - sudo docker run -d --name=rabbitmq -p 0.0.0.0:5672:5672 -p 0.0.0.0:15672:15672 -v /var/log/rabbitmq:/data/log -v /var/lib/rabbitmq/mnesia:/data/mnesia rabbitmq:3-management
@@ -31,7 +14,7 @@ TO-DO
     - Login as user "guest" with password "guest"
     
 - InfluxDB backend for Kubernetes Heapster
-    Sample Docker based installation for test/debug:
+  - Sample Docker based installation for test/debug:
     - sudo mkdir /var/lib/influxdb
     - sudo docker run -d --name influxdb -p 0.0.0.0:8083:8083 -p 0.0.0.0:8086:8086 -v /var/lib/influxdb:/data kubernetes/heapster_influxdb
     - Visit http://localhost:8083
