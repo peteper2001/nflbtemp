@@ -6,7 +6,7 @@
 
 FROM ubuntu:14.04
 MAINTAINER Alex Blanc "alex@blancsys.com"
-ENV REFRESHED_AT 2015-10-10
+ENV REFRESHED_AT 2015-11-09
 
 # Volume for sqlite file
 VOLUME  ["/var/lib/influbbit"]
