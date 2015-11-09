@@ -15,8 +15,6 @@ spec:
         name: influbbit
         version: "1"
     spec:
-      imagePullSecrets:
-      - name: dockersecret
       volumes:
       - name: influbbitdata
         hostPath:
